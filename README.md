@@ -3,13 +3,14 @@ Photo Selector
 
 Tool to help forum administrators to select pictures.
 
+!(photoselector)[photoselector.jpg]
 
 Instructions
 ============
 
 In the page address, type the topic you're evaluating
 
-    http://hostna.me/**index.php?topic=10.0**
+    http://hostna.me/index.php?topic=10.0
 
 Press **Carregar** and hold. 
 
