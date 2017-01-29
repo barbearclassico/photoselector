@@ -3,7 +3,7 @@ Photo Selector
 
 Tool to help forum administrators to select pictures.
 
-!(photoselector)[photoselector.jpg]
+![photoselector](photoselector.jpg)
 
 Instructions
 ============
