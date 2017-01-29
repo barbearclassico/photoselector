@@ -1,0 +1,14 @@
+#!/bin/bash 
+
+topic=$1
+
+wget -O bcimages.html  "http://www.barbearclassico.com/index.php?action=printpage;topic=$topic"
+
+cat bcimages.html  \
+    | sed 's/http/\nhttp/g' \
+    | grep http       \
+    | egrep -i "jpg|png|gif"  \
+    | grep -v html  \
+    | awk -F")" '{ print $1 }'   \
+    | sort                                \
+    | uniq 
