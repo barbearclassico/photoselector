@@ -7,8 +7,10 @@ wget -O bcimages.html  "http://www.barbearclassico.com/index.php?action=printpag
 cat bcimages.html  \
     | sed 's/http/\nhttp/g' \
     | grep http       \
-    | egrep -i "jpg|png|gif"  \
+    | egrep -i "\.jpg|\.png|\.gif"  \
     | grep -v html  \
+    | grep -v tapatalk-emoji  \
     | awk -F")" '{ print $1 }'   \
+    | awk '{ print $1 }'   \
     | sort                                \
     | uniq 
