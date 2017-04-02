@@ -9,6 +9,7 @@ cat bcimages.html  \
     | grep http       \
     | egrep -i "\.jpg|\.png|\.gif"  \
     | grep -v html  \
+    | grep -v /Themes/brfinale \
     | grep -v tapatalk-emoji  \
     | awk -F")" '{ print $1 }'   \
     | awk '{ print $1 }'   \
