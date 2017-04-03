@@ -49,7 +49,7 @@
 				var str = "";
 				counter=1
 				for(var i in lista){
-					str += "[b][size=4]Foto "+counter+"[/b]\n\n[center][img width=800]"+lista[i]+"[/img][/center]\n\n\n";
+					str += "[b][size=4]Foto "+counter+"[/size][/b]\n\n[center][img width=800]"+lista[i]+"[/img][/center]\n\n\n";
 					counter++;
 				}
 				document.getElementById('outz').value = str;
